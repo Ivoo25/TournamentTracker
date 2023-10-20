@@ -1,0 +1,15 @@
+Big Picture Design 
+-> This gives me the idea of how to design the app
+
+Structure: Windows Forms Application and Class Library
+Data: SQL and/or Text file
+Users: One at a time on one application
+
+Key Concepts (things i might not know now)
+	. Email (how do i send it from C#?)
+	. SQL (how to access data)
+	. Custom Events (how will i know when its the last game of the round)
+	. Error Handling
+	. Interfaces
+	. Random Ordering
+	. Texting
