@@ -1,0 +1,10 @@
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerUI\bin\Debug\TrackerUI.exe.config
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerUI\bin\Debug\TrackerUI.exe
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerUI\bin\Debug\TrackerUI.pdb
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.csproj.AssemblyReference.cache
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.Properties.Resources.resources
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.TournamentViewerForm.resources
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.csproj.GenerateResource.cache
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.csproj.CoreCompileInputs.cache
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.exe
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.pdb
