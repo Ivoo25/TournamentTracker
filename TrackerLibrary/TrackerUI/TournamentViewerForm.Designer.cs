@@ -52,9 +52,9 @@
             this.headerLabel.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.headerLabel.Location = new System.Drawing.Point(12, 9);
             this.headerLabel.Name = "headerLabel";
-            this.headerLabel.Size = new System.Drawing.Size(263, 63);
+            this.headerLabel.Size = new System.Drawing.Size(254, 63);
             this.headerLabel.TabIndex = 0;
-            this.headerLabel.Text = "Tournament:";
+            this.headerLabel.Text = "Tournament";
             // 
             // tournamentName
             // 
