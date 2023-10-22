@@ -9,3 +9,4 @@ C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\
 C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerLibrary\obj\Debug\net7.0\refint\TrackerLibrary.dll
 C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerLibrary\obj\Debug\net7.0\TrackerLibrary.pdb
 C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerLibrary\obj\Debug\net7.0\ref\TrackerLibrary.dll
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerLibrary\obj\Debug\net7.0\TrackerLibrary.csproj.AssemblyReference.cache

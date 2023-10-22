@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TrackerLibrary
+namespace TrackerLibrary.Mdels
 {
     public class PrizeModel
     {
@@ -31,5 +31,26 @@ namespace TrackerLibrary
         /// Represents the number that represents the percentage of the overall take or
         /// </summary>
         public double prizePercentage { get; set; }
+
+        public PrizeModel()
+        {
+
+        }
+        //ctor is a shortcut for creating a constructor
+        public PrizeModel(string placeName, string placeNumber, string? prizeAmount, string? prizePercentage)
+        {
+            int placeNumberValue = 0;
+            decimal prizeAmountValue = 0;
+            double prizePercentageValue = 0;
+
+            int.TryParse(placeNumber, out placeNumberValue);
+            decimal.TryParse(prizeAmount, out prizeAmountValue);
+            double.TryParse(prizePercentage, out prizePercentageValue);
+
+            this.placeName = placeName;
+            this.placeNumber = placeNumberValue;
+            this.prizeAmount = prizeAmountValue;
+            this.prizePercentage = prizePercentageValue;
+        }
     }
 }
