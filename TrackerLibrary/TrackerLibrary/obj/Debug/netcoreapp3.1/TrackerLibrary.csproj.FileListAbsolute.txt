@@ -1,0 +1,4 @@
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerLibrary\obj\Debug\netcoreapp3.1\TrackerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerLibrary\obj\Debug\netcoreapp3.1\TrackerLibrary.AssemblyInfoInputs.cache
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerLibrary\obj\Debug\netcoreapp3.1\TrackerLibrary.AssemblyInfo.cs
+C:\Users\agust\OneDrive\Documentos\C#-Projects\TournamentTracker\TrackerLibrary\TrackerLibrary\obj\Debug\netcoreapp3.1\TrackerLibrary.csproj.CoreCompileInputs.cache
