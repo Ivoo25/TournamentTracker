@@ -74,7 +74,7 @@
             this.loadTournamentButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loadTournamentButton.Font = new System.Drawing.Font("Segoe UI Variable Small Semibol", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loadTournamentButton.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.loadTournamentButton.Location = new System.Drawing.Point(355, 381);
+            this.loadTournamentButton.Location = new System.Drawing.Point(351, 381);
             this.loadTournamentButton.Name = "loadTournamentButton";
             this.loadTournamentButton.Size = new System.Drawing.Size(260, 63);
             this.loadTournamentButton.TabIndex = 27;

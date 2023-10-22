@@ -55,7 +55,7 @@
             // 
             // placeNumberValueTextBox
             // 
-            this.placeNumberValueTextBox.Location = new System.Drawing.Point(281, 84);
+            this.placeNumberValueTextBox.Location = new System.Drawing.Point(443, 84);
             this.placeNumberValueTextBox.Name = "placeNumberValueTextBox";
             this.placeNumberValueTextBox.Size = new System.Drawing.Size(340, 43);
             this.placeNumberValueTextBox.TabIndex = 14;
@@ -65,7 +65,7 @@
             this.placeNumberabel.AutoSize = true;
             this.placeNumberabel.Font = new System.Drawing.Font("Segoe UI Variable Display", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.placeNumberabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.placeNumberabel.Location = new System.Drawing.Point(15, 83);
+            this.placeNumberabel.Location = new System.Drawing.Point(178, 83);
             this.placeNumberabel.Name = "placeNumberabel";
             this.placeNumberabel.Size = new System.Drawing.Size(215, 44);
             this.placeNumberabel.TabIndex = 13;
@@ -73,7 +73,7 @@
             // 
             // palceNameValueTextBox
             // 
-            this.palceNameValueTextBox.Location = new System.Drawing.Point(281, 146);
+            this.palceNameValueTextBox.Location = new System.Drawing.Point(443, 181);
             this.palceNameValueTextBox.Name = "palceNameValueTextBox";
             this.palceNameValueTextBox.Size = new System.Drawing.Size(340, 43);
             this.palceNameValueTextBox.TabIndex = 16;
@@ -83,7 +83,7 @@
             this.placeNameLabel.AutoSize = true;
             this.placeNameLabel.Font = new System.Drawing.Font("Segoe UI Variable Display", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.placeNameLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.placeNameLabel.Location = new System.Drawing.Point(15, 145);
+            this.placeNameLabel.Location = new System.Drawing.Point(178, 180);
             this.placeNameLabel.Name = "placeNameLabel";
             this.placeNameLabel.Size = new System.Drawing.Size(182, 44);
             this.placeNameLabel.TabIndex = 15;
@@ -91,7 +91,7 @@
             // 
             // prizeAmountValueTextBox
             // 
-            this.prizeAmountValueTextBox.Location = new System.Drawing.Point(281, 208);
+            this.prizeAmountValueTextBox.Location = new System.Drawing.Point(444, 278);
             this.prizeAmountValueTextBox.Name = "prizeAmountValueTextBox";
             this.prizeAmountValueTextBox.Size = new System.Drawing.Size(340, 43);
             this.prizeAmountValueTextBox.TabIndex = 18;
@@ -101,7 +101,7 @@
             this.prizeAmoountLabel.AutoSize = true;
             this.prizeAmoountLabel.Font = new System.Drawing.Font("Segoe UI Variable Display", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prizeAmoountLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.prizeAmoountLabel.Location = new System.Drawing.Point(15, 207);
+            this.prizeAmoountLabel.Location = new System.Drawing.Point(178, 277);
             this.prizeAmoountLabel.Name = "prizeAmoountLabel";
             this.prizeAmoountLabel.Size = new System.Drawing.Size(207, 44);
             this.prizeAmoountLabel.TabIndex = 17;
@@ -109,7 +109,7 @@
             // 
             // pricePercentageValueTextBox
             // 
-            this.pricePercentageValueTextBox.Location = new System.Drawing.Point(281, 474);
+            this.pricePercentageValueTextBox.Location = new System.Drawing.Point(444, 472);
             this.pricePercentageValueTextBox.Name = "pricePercentageValueTextBox";
             this.pricePercentageValueTextBox.Size = new System.Drawing.Size(340, 43);
             this.pricePercentageValueTextBox.TabIndex = 20;
@@ -119,7 +119,7 @@
             this.pricePercentageLabel.AutoSize = true;
             this.pricePercentageLabel.Font = new System.Drawing.Font("Segoe UI Variable Display", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricePercentageLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.pricePercentageLabel.Location = new System.Drawing.Point(15, 473);
+            this.pricePercentageLabel.Location = new System.Drawing.Point(178, 471);
             this.pricePercentageLabel.Name = "pricePercentageLabel";
             this.pricePercentageLabel.Size = new System.Drawing.Size(260, 44);
             this.pricePercentageLabel.TabIndex = 19;
@@ -130,7 +130,7 @@
             this.orLabel.AutoSize = true;
             this.orLabel.Font = new System.Drawing.Font("Segoe UI Variable Display", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.orLabel.Location = new System.Drawing.Point(405, 344);
+            this.orLabel.Location = new System.Drawing.Point(435, 374);
             this.orLabel.Name = "orLabel";
             this.orLabel.Size = new System.Drawing.Size(92, 44);
             this.orLabel.TabIndex = 21;
@@ -144,7 +144,7 @@
             this.createPrizeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.createPrizeButton.Font = new System.Drawing.Font("Segoe UI Variable Small Semibol", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createPrizeButton.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.createPrizeButton.Location = new System.Drawing.Point(739, 12);
+            this.createPrizeButton.Location = new System.Drawing.Point(376, 658);
             this.createPrizeButton.Name = "createPrizeButton";
             this.createPrizeButton.Size = new System.Drawing.Size(211, 63);
             this.createPrizeButton.TabIndex = 26;
