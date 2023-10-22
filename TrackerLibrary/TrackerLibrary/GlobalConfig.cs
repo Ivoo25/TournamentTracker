@@ -8,7 +8,7 @@ namespace TrackerLibrary
 {
     public static class GlobalConfig
     {
-        public static List<IDataConnection> connections { get; private set; }
+        public static List<IDataConnection> connections { get; private set; } = new List<IDataConnection>();
         //Only the GlobalConfig class can set this property, but anyone can get it
         public static void initializeConnections(bool database, bool textFiles)
         {
@@ -21,7 +21,8 @@ namespace TrackerLibrary
 
             if (textFiles)
             {
-
+                TextConnector text = new TextConnector();
+                connections.Add(text);
             }
         }
     }
