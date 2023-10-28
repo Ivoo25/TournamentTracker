@@ -34,12 +34,41 @@ namespace TrackerLibrary.DataAccess.TextHelpers
             return output;
         }
 
+        public static List<PersonModel> convertToPersonModels(this List<string> lines)
+        {
+            List<PersonModel> output = new List<PersonModel>();
+            foreach (string line in lines)
+            {
+                string[] cols = line.Split(','); // Split the line by commas, and store the result in an array
+                PersonModel p = new PersonModel();
+                p.id = int.Parse(cols[0]);
+                p.firstName = cols[1];
+                p.lastName = cols[2];
+                p.emailAddress = cols[3];
+                p.cellphoneNumber = cols[4];
+                //cols: 0:id, 1: firstName, 2: lastName, 3: emailAddress, 4: cellphoneNumber
+                output.Add(p);
+            }
+
+            return output;
+        }
+
         public static void SaveToPrizeFile(this List<PrizeModel> models, string filename)
         {
             List<string> lines = new List<string>();
             foreach (PrizeModel p in models)
             {
                 lines.Add($"{p.id},{p.placeNumber},{p.placeName},{p.prizeAmount},{p.prizePercentage}");
+            }
+            File.WriteAllLines(filename.fullFilePath(), lines);
+        }
+
+        public static void SaveToPeopleFile(this List<PersonModel> models, string filename)
+        {
+            List<string> lines = new List<string>();
+            foreach (PersonModel p in models)
+            {
+                lines.Add($"{p.id},{p.firstName},{p.lastName},{p.emailAddress},{p.cellphoneNumber}");
             }
             File.WriteAllLines(filename.fullFilePath(), lines);
         }

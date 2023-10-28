@@ -9,6 +9,11 @@ namespace TrackerLibrary.Mdels
     public class PersonModel
     {
         /// <summary>
+        /// Represents the unique identifier for the person.
+        /// </summary>
+        public int id { get; set; }
+
+        /// <summary>
         /// Represents the first name of the person.
         /// </summary>
         public string firstName { get; set; }
