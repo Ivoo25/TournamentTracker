@@ -30,10 +30,9 @@ namespace TrackerUI
                     prizeAmountValueTextBox.Text,
                     prizePercentageValueTextBox.Text);
 
-                foreach (IDataConnection db in GlobalConfig.connections)
-                {
-                    db.createPrize(model);
-                }
+
+                GlobalConfig.connections.createPrize(model); //This is the method that saves the prize to the database
+
                 MessageBox.Show($"Created prize:\n \tPosition:{placeNameValueTextBox.Text}\n \tName:{placeNameValueTextBox.Text}\n \tAmount (if 0, considered price percentage):{prizeAmountValueTextBox.Text}\n \tPrice percentage:{prizePercentageValueTextBox.Text}%.");
                 placeNameValueTextBox.Text = "";
                 placeNumberValueTextBox.Text = "";
