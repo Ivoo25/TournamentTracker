@@ -63,5 +63,7 @@ namespace TrackerLibrary.DataAccess
             prizes.SaveToPrizeFile(PrizesFile);
             return model;
         }
+
+        public List<PersonModel> getPerson_All() => PeopleFile.fullFilePath().loadFile().convertToPersonModels();
     }
 }

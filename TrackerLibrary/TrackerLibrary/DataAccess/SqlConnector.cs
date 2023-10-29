@@ -12,9 +12,10 @@ namespace TrackerLibrary.DataAccess
 {
     public class SqlConnector : IDataConnection
     {
+        private const string db = "Tournaments";
         public PersonModel createPerson(PersonModel model)
         {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.cnnString("Tournaments")))
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.cnnString(db)))
             {
                 var p = new DynamicParameters();
                 p.Add("@FirstName", model.firstName);
@@ -40,7 +41,7 @@ namespace TrackerLibrary.DataAccess
         /// <returns>The prize information, including the unique identifier</returns>
         public PrizeModel createPrize(PrizeModel model)
         {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.cnnString("Tournaments")))
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.cnnString(db)))
             {
                 var p = new DynamicParameters();
                 p.Add("@PlaceNumber", model.placeNumber);
@@ -57,6 +58,17 @@ namespace TrackerLibrary.DataAccess
                 model.id = p.Get<int>("@id");
                 return model;
             }
+        }
+
+        public List<PersonModel> getPerson_All()
+        {
+            List<PersonModel>? output;
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.cnnString(db)))
+            {
+                output = connection.Query<PersonModel>("dbo.spPeople_GetAll").ToList();
+            }
+            return output ?? new List<PersonModel>();
+            throw new NotImplementedException();
         }
     }
 }

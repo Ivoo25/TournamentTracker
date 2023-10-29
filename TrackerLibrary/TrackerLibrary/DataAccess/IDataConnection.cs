@@ -13,5 +13,8 @@ namespace TrackerLibrary.DataAccess
         // PrizeModel is the model we are passing in, and PrizeModel is the model we are returning
         PersonModel createPerson(PersonModel model);
         // PersonModel is the model we are passing in, and PersonModel is the model we are returning
+
+        List<PersonModel> getPerson_All();
+
     }
 }

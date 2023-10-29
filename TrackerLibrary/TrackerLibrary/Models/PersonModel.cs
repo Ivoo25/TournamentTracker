@@ -32,5 +32,11 @@ namespace TrackerLibrary.Mdels
         /// Represents the cellphone number of the person.
         /// </summary>
         public string cellphoneNumber { get; set; }
+
+        public string fullName
+        {
+            get { return $"{firstName} {lastName}"; }
+        }
+
     }
 }
