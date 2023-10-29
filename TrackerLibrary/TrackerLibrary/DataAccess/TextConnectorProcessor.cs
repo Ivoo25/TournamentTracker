@@ -53,6 +53,29 @@ namespace TrackerLibrary.DataAccess.TextHelpers
             return output;
         }
 
+        public static List<TeamModel> convertToTeamModels(this List<string> lines, string peopleFileName)
+        {
+            //id, team name, list of ids separated by the pipe
+            //3, Tim's Team, 1|3|5 -> 1, 3, 5 are the ids of the team members
+            List<TeamModel> output = new List<TeamModel>();
+            List<PersonModel> people = peopleFileName.fullFilePath().loadFile().convertToPersonModels();
+            foreach (string line in lines)
+            {
+                string[] cols = line.Split(','); // Split the line by commas, and store the result in an array
+                TeamModel t = new TeamModel();
+                t.id = int.Parse(cols[0]);
+                t.teamName = cols[1];
+                string[] personIds = cols[2].Split('|'); // Split the line by pipes, and store the result in an array
+
+                foreach (string id in personIds)
+                {
+                    t.teamMembers.Add(people.Where(x => x.id == int.Parse(id)).First());
+                    // what this does is that it finds the person with the id that matches the id in the personIds array, and adds it to the teamMembers list
+                }
+            }
+            return output;
+        }
+
         public static void SaveToPrizeFile(this List<PrizeModel> models, string filename)
         {
             List<string> lines = new List<string>();
@@ -72,11 +95,30 @@ namespace TrackerLibrary.DataAccess.TextHelpers
             }
             File.WriteAllLines(filename.fullFilePath(), lines);
         }
+
+        public static void SaveToTeamFile(this List<TeamModel> models, string filename)
+        {
+            List<string> lines = new List<string>();
+            foreach (TeamModel t in models)
+            {
+                lines.Add($"{t.id},{t.teamName},{ConvertPeopleListToString(t.teamMembers)}");
+            }
+            File.WriteAllLines(filename.fullFilePath(), lines);
+        }
+
+        private static string ConvertPeopleListToString(List<PersonModel> people)
+        {
+            string output = "";
+            if (people.Count == 0)
+            {
+                return "";
+            }
+            foreach (PersonModel p in people)
+            {
+                output += $"{p.id}|";
+            }
+            output = output.Substring(0, output.Length - 1); // Remove the last pipe
+            return output;
+        }
     }
 }
-// * Load the text file
-// * Convert the text to List<PrizeModel>
-// Find the max ID
-//Add the new record with the new ID (max + 1)
-// Convert the prizes to List<string>
-// Save the List<string> to the text file

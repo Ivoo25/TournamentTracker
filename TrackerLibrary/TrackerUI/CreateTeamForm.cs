@@ -131,5 +131,14 @@ namespace TrackerUI
                 wireUpLists();
             }
         }
+
+        private void createTeamButton_Click(object sender, EventArgs e)
+        {
+            TeamModel t = new TeamModel();
+            t.teamName = teamNameValueTextBox.Text;
+            t.teamMembers = selectedTeamMember;
+            t = GlobalConfig.connections.createTeam(t);
+            MessageBox.Show($"Created team:\n \tTeam name: {teamNameValueTextBox.Text}\n \tTeam members: {selectedTeamMember.Count}.");
+        }
     }
 }
