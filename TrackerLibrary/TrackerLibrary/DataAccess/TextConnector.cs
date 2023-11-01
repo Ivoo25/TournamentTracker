@@ -80,5 +80,10 @@ namespace TrackerLibrary.DataAccess
         }
 
         public List<PersonModel> getPerson_All() => PeopleFile.fullFilePath().loadFile().convertToPersonModels();
+
+        public List<TeamModel> getTeam_All()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

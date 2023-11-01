@@ -102,5 +102,22 @@ namespace TrackerLibrary.DataAccess
             return output ?? new List<PersonModel>();
             throw new NotImplementedException();
         }
+
+        public List<TeamModel> getTeam_All()
+        {
+            List<TeamModel>? output;
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.cnnString(db)))
+            {
+                output = connection.Query<TeamModel>("dbo.spTeam_GetAll").ToList();
+                foreach (TeamModel team in output)
+                {
+                    var p = new DynamicParameters();
+                    p.Add("@TeamId", team.id);
+                    team.teamMembers = connection.Query<PersonModel>("dbo.spTeamMembers_GetByTeam", p, commandType: CommandType.StoredProcedure).ToList();
+                }
+            }
+            return output ?? new List<TeamModel>();
+            throw new NotImplementedException();
+        }
     }
 }
