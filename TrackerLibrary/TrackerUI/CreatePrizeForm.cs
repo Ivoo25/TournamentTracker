@@ -15,9 +15,11 @@ namespace TrackerUI
 {
     public partial class CreatePrizeForm : Form
     {
-        public CreatePrizeForm()
+        IPrizeRequester callingForm;
+        public CreatePrizeForm(IPrizeRequester caller)
         {
             InitializeComponent();
+            callingForm = caller;
         }
 
         private void createPrizeButton_Click(object sender, EventArgs e)
@@ -32,12 +34,15 @@ namespace TrackerUI
 
 
                 GlobalConfig.connections.createPrize(model); //This is the method that saves the prize to the database
-
+                callingForm.prizeComplete(model);
                 MessageBox.Show($"Created prize:\n \tPosition:{placeNameValueTextBox.Text}\n \tName:{placeNameValueTextBox.Text}\n \tAmount (if 0, considered price percentage):{prizeAmountValueTextBox.Text}\n \tPrice percentage:{prizePercentageValueTextBox.Text}%.");
-                placeNameValueTextBox.Text = "";
-                placeNumberValueTextBox.Text = "";
-                prizeAmountValueTextBox.Text = 0.ToString();
-                prizePercentageValueTextBox.Text = 0.ToString();
+                this.Close();
+
+
+                //    placeNameValueTextBox.Text = "";
+                //    placeNumberValueTextBox.Text = "";
+                //    prizeAmountValueTextBox.Text = 0.ToString();
+                //    prizePercentageValueTextBox.Text = 0.ToString();
             }
             else
             {
