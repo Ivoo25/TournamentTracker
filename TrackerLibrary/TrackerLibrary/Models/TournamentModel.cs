@@ -9,6 +9,11 @@ namespace TrackerLibrary.Mdels
     public class TournamentModel
     {
         /// <summary>
+        /// Represents the unique identifier for the tournament.
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
         /// Represents the name of the tournament.
         /// </summary>
         public string tournamentName { get; set; }

@@ -72,6 +72,8 @@ namespace TrackerLibrary.DataAccess.TextHelpers
                     t.teamMembers.Add(people.Where(x => x.id == int.Parse(id)).First());
                     // what this does is that it finds the person with the id that matches the id in the personIds array, and adds it to the teamMembers list
                 }
+                //cols: 0:id, 1: teamName, 2: list of ids separated by the pipe
+                output.Add(t);
             }
             return output;
         }

@@ -79,11 +79,13 @@ namespace TrackerLibrary.DataAccess
             return model;
         }
 
-        public List<PersonModel> getPerson_All() => PeopleFile.fullFilePath().loadFile().convertToPersonModels();
-
-        public List<TeamModel> getTeam_All()
+        public TournamentModel createTournament(TournamentModel model)
         {
             throw new NotImplementedException();
         }
+
+        public List<PersonModel> getPerson_All() => PeopleFile.fullFilePath().loadFile().convertToPersonModels();
+
+        public List<TeamModel> getTeam_All() => TeamFile.fullFilePath().loadFile().convertToTeamModels(PeopleFile);
     }
 }
