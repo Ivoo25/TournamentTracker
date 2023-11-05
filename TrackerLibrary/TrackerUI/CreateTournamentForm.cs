@@ -118,11 +118,12 @@ namespace TrackerUI
             tm.entryFee = eFee;
             tm.prizes = selectedPrizes;
             tm.enteredTeams = selectedTeams;
+            //Wire our matchups
+
             //Create tournament entry
             //Create all of the prizes entries
             //Create all of the team entries
-
-            //Create our matchups
+            GlobalConfig.connections.createTournament(tm);
         }
     }
 }

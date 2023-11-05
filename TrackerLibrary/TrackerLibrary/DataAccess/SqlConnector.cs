@@ -92,14 +92,14 @@ namespace TrackerLibrary.DataAccess
             throw new NotImplementedException();
         }
 
-        public TournamentModel createTournament(TournamentModel model)
+        public void createTournament(TournamentModel model)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(GlobalConfig.cnnString(db)))
             {
                 saveTournament(connection, model);
                 saveTournamentPrizes(connection, model);
                 saveTournamentEntries(connection, model);
-                return model;
+                //return model;
             }
             throw new NotImplementedException();
         }
