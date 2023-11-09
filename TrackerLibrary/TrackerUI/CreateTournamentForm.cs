@@ -118,7 +118,9 @@ namespace TrackerUI
             tm.entryFee = eFee;
             tm.prizes = selectedPrizes;
             tm.enteredTeams = selectedTeams;
+
             //Wire our matchups
+            TournamentLogic.CreateRounds(tm);
 
             //Create tournament entry
             //Create all of the prizes entries
