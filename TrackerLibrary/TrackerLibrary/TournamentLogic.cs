@@ -20,6 +20,32 @@ namespace TrackerLibrary
             int byes = NumberofByes(rounds, randomizedTeams.Count); // 2^4 - 2^3 = 2
 
             model.rounds.Add(CreateFirstRound(byes, randomizedTeams));
+            CreateOtherRounds(model, rounds);
+        }
+
+        private static void CreateOtherRounds(TournamentModel model, int rounds)
+        {
+            int round = 2;
+            List<MatchupModel> previousRound = model.rounds[0];
+            List<MatchupModel> currRound = new List<MatchupModel>();
+            MatchupModel currM = new MatchupModel();
+            while (round <= rounds)
+            {
+                foreach (MatchupModel match in previousRound)
+                {
+                    currM.entries.Add(new MatchupEntryModel { parentMatchup = match });
+                    if (currM.entries.Count > 1)
+                    {
+                        currM.matchupRound = round;
+                        currRound.Add(currM);
+                        currM = new MatchupModel();
+                    }
+                }
+                model.rounds.Add(currRound);
+                previousRound = currRound;
+                currRound = new List<MatchupModel>();
+                round += 1;
+            }
         }
 
         private static List<MatchupModel> CreateFirstRound(int byes, List<TeamModel> teams)
