@@ -18,6 +18,8 @@ namespace TrackerLibrary
             List<TeamModel> randomizedTeams = RandomizeTeamOrder(model.enteredTeams);
             int rounds = FindNumberOfRounds(randomizedTeams.Count);
             int byes = NumberofByes(rounds, randomizedTeams.Count); // 2^4 - 2^3 = 2
+
+            model.rounds.Add(CreateFirstRound(byes, randomizedTeams));
         }
 
         private static List<MatchupModel> CreateFirstRound(int byes, List<TeamModel> teams)
