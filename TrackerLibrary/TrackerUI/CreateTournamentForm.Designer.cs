@@ -279,6 +279,7 @@
             Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             Name = "CreateTournamentForm";
             Text = "Create Tournament";
+            Load += CreateTournamentForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

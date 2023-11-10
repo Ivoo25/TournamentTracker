@@ -127,5 +127,10 @@ namespace TrackerUI
             //Create all of the team entries
             GlobalConfig.connections.createTournament(tm);
         }
+
+        private void CreateTournamentForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
