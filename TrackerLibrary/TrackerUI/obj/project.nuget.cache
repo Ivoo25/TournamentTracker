@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "rTw15MJvbUSDNo8bCfxrErdUK8QCX6jIlr5pZlwf9KYUivRE73K1HHMD9Mn8+88JyZFfyVKCfBD1wCe9O2A32g==",
+=======
+  "dgSpecHash": "bBDk70qBlPn/piJ+wrNF08F97+eqSwJyRPk+ojGpT2loN5D0CxHRR99M6GjxgUBZQwDgH8NHsye0aqV0+Dcudw==",
+>>>>>>> e71b1044553074776a9d0fb19520109102c014c2
   "success": true,
   "projectFilePath": "C:\\Users\\agust\\OneDrive\\Documentos\\C#-Projects\\TournamentTracker\\TrackerLibrary\\TrackerUI\\TrackerUI.csproj",
   "expectedPackageFiles": [
